@@ -1,20 +1,19 @@
-// Importações
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+// Firebase Compat (funciona no GitHub Pages)
 
 // Config do Firebase
 const firebaseConfig = {
-    apiKey: "SUA_KEY",
-    authDomain: "SEU_AUTH",
-    projectId: "SEU_PROJECT",
-    storageBucket: "SEU_BUCKET",
-    messagingSenderId: "SEU_SENDER",
-    appId: "SEU_APP"
+    apiKey: "AIzaSyA6vv58ejDEH8cmh3833VchEd7DIct8ba0",
+    authDomain: "appmissoes-21c4f.firebaseapp.com",
+    projectId: "appmissoes-21c4f",
+    storageBucket: "appmissoes-21c4f.firebasestorage.app",
+    messagingSenderId: "97813114592",
+    appId: "1:97813114592:web:5d51ae9b0bf9f01058ea85"
 };
 
-// Inicializa Firebase
+// Inicializa Firebase (COMPAT)
 firebase.initializeApp(firebaseConfig);
 
-// Globais
+// Globais (compat)
 const db = firebase.firestore();
 const auth = firebase.auth();
+
