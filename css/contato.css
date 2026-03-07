@@ -17,17 +17,16 @@ body {
 /* ============================= */
 /* SECTION CONTATO */
 /* ============================= */
-/*#contato {
+#contato {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px 20px;
-  background: linear-gradient(rgba(14, 28, 56, 0.55), rgba(14, 28, 56, 0.55)),
-    url("../assets/jesus-orando.avif");
+  background: url("/assets/images/jesus-orando.avif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}*/
+}
 
 /* ============================= */
 /* CARD DO FORMULÁRIO */
@@ -154,5 +153,6 @@ body {
     font-size: 1.5rem;
   }
 }
+
 
 
