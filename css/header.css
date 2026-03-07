@@ -93,6 +93,11 @@
     z-index: 1000;
 }
 
+.menu-overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* BLOQUEIO SCROLL */
 body.no-scroll { overflow: hidden; }
