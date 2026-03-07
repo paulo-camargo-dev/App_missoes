@@ -4,6 +4,9 @@ import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase
 document.addEventListener("DOMContentLoaded", async function() {
 
     const container = document.getElementById("noticiaCompleta");
+    if (!container) return;
+
+    container.innerHTML = "<p class='estado-carregando'>Carregando noticia...</p>";
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
@@ -26,8 +29,15 @@ document.addEventListener("DOMContentLoaded", async function() {
         container.innerHTML = `
             <div class="layout-noticia">
 
-                <div class="imagem-noticia">
-                    <img src="${noticia.imagem}" alt="${noticia.titulo}">
+                <div class="imagem-noticia imagem-wrapper">
+                    <img
+                        src="${noticia.imagem}"
+                        alt="${noticia.titulo}"
+                        loading="lazy"
+                        decoding="async"
+                        onload="this.parentElement.classList.add('carregada')"
+                        onerror="this.parentElement.classList.add('carregada')"
+                    >
                 </div>
 
                 <div class="conteudo-noticia-individual">
