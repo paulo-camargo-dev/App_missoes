@@ -90,7 +90,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .menu-overlay.ativo {
@@ -101,3 +101,4 @@
 
 /* BLOQUEIO SCROLL */
 body.no-scroll { overflow: hidden; }
+
