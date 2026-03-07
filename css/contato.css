@@ -22,19 +22,29 @@ body {
   justify-content: center;
   align-items: center;
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  background: linear-gradient(rgba(14, 28, 56, 0.55), rgba(14, 28, 56, 0.55)),
+    url("../assets/jesus-orando.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ============================= */
 /* CARD DO FORMULÁRIO */
 /* ============================= */
 #contato .container {
-  background: #ffffff;
+  background: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
+    url("../assets/jesus-orando.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   max-width: 650px;
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   transition: transform 0.3s ease;
 }
 
